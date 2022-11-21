@@ -1,0 +1,13 @@
+<mat-sidenav-container fullscreen>
+  <mat-sidenav #sidenav  mode="side" class="example-sidenav" [ngStyle]="{ 'width.em': sidenavWidth }" opened="true" (mouseenter)="increase()"
+               (mouseleave)="decrease()">
+    <div class="flex items-center justify-center h-20 ng-tns-c41-0"><img src="assets/images/logo.svg" alt="Logo image" class="w-8"></div>
+    <app-sidebar [sidenavWidth]="sidenavWidth"></app-sidebar>
+
+  </mat-sidenav>
+
+  <div class="example-sidenav-content">
+    <app-header [sidenav]="sidenav"></app-header>
+    <router-outlet></router-outlet>
+  </div>
+</mat-sidenav-container>
