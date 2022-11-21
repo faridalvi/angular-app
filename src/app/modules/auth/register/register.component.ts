@@ -24,6 +24,7 @@ export class RegisterComponent implements OnInit {
     })
     // Mark for check
     this._changeDetectorRef.markForCheck();
+    console.warn('Register')
   }
   //Login
   register(){

@@ -24,6 +24,7 @@ export class LoginComponent implements OnInit {
     })
     // Mark for check
     this._changeDetectorRef.markForCheck();
+    console.warn('Login')
   }
   //Login
   login(){
